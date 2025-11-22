@@ -22,7 +22,7 @@ variable "vpc_cidr" {
 variable "project_name" {
   description = "Nombre del proyecto (se usa para etiquetar recursos en AWS)"
   type        = string
-  default     = "ThreeTierLab"
+  default     = "threetierapp"
 }
 
 # Tipo de instancia EC2 para el servidor de aplicaciones
@@ -42,7 +42,7 @@ variable "db_username" {
   description = "Nombre de usuario para conectarse a la base de datos"
   type        = string
   default     = "admin"
-  sensitive   = true  # No se mostrará en los logs
+  sensitive   = true # No se mostrará en los logs
 }
 
 # Contraseña de la base de datos (cámbiala en producción!)
@@ -50,7 +50,7 @@ variable "db_password" {
   description = "Contraseña del usuario de base de datos"
   type        = string
   default     = "ThreeTier2025"
-  sensitive   = true  # No se mostrará en los logs
+  sensitive   = true # No se mostrará en los logs
 }
 
 # Nombre de la base de datos que se creará automáticamente
