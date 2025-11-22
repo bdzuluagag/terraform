@@ -1,0 +1,59 @@
+# ============================================
+# GITIGNORE - Three-Tier AWS Infrastructure
+# ============================================
+
+# Archivos de estado de Terraform (contienen info sensible)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Directorio de módulos descargados
+.terraform/
+.terraform.lock.hcl
+
+# Variables de entorno con credenciales
+.env
+.env.local
+.env.*.local
+
+# Archivos de credenciales AWS
+.aws/
+credentials
+
+# Crash logs de Terraform
+crash.log
+crash.*.log
+
+# Archivos de override (para desarrollo local)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Archivos CLI de Terraform
+.terraformrc
+terraform.rc
+
+# Archivos de IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos de backup
+*.bak
+*.backup
+*.tmp
+
+# Logs locales
+*.log
+
+# Archivos de variables con valores reales (usar .env en su lugar)
+# terraform.tfvars
+# *.auto.tfvars
